@@ -7,7 +7,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #747704;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   position: relative;
 }
 
@@ -24,6 +24,9 @@ body {
   color: #BCBBBB;
 }
 
+.text-small {
+  font-size: 0.8em;
+}
 .text-thin {
   font-weight: 100;
 }
@@ -54,10 +57,16 @@ body {
   background-color: #FFF;
   border: 0px;
 }
-
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: #BCBBBB;
+}
 .navbar-nav {
   border: 1px solid transparent;
   border-color: #e7efef transparent;
+}
+
+.infoMe {
+  padding: 10px;
 }
 hr.star-dark {
   max-width: 512px;
@@ -68,13 +77,14 @@ hr.star-dark {
   text-align: center;
 }
 hr.star-dark:after {
-  content: '<\\>';
+  font-family: FontAwesome;
+   content: "\f121";
   display: inline-block;
   background-color: #FFF;
   color: #c4c4c4;
   position: relative;
   top: -0.8em;
-  font-size: 2em;
+  font-size: 1.8em;
 
 }
 
@@ -100,4 +110,15 @@ hr.star-dark:after {
   #contact {
     padding-top: 0;
   }
+  .navbar-nav {
+    border: 0;
+  }
+
+  .navbar-nav li {
+    width: 100%;
+  }
+
+  /*.navbar-nav li + li:before{
+    content: '<hr>';
+  }*/
 }
