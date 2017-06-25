@@ -51,7 +51,12 @@ body {
 }
 .nav>li {
   text-align: center;
-  width: 33.3%
+  width: 33.3%;
+}
+
+.portrait-img {
+  max-width: 360px;
+  margin: 0 auto;
 }
 .navbar-default {
   background-color: #FFF;
@@ -68,6 +73,17 @@ body {
 .infoMe {
   padding: 10px;
 }
+.git-link {
+  color: inherit;
+}
+.git-link:after {
+  content: " \f09b";
+  font-family: FontAwesome;
+}
+.git-link:hover, .git-link:active, .git-link:focus {
+  text-decoration: none;
+  color: inherit;
+}
 hr.star-dark {
   max-width: 512px;
   border: 0;
@@ -78,7 +94,7 @@ hr.star-dark {
 }
 hr.star-dark:after {
   font-family: FontAwesome;
-   content: "\f121";
+  content: "\f121";
   display: inline-block;
   background-color: #FFF;
   color: #c4c4c4;
@@ -97,10 +113,6 @@ hr.star-dark:after {
 #about {
   font-size: 22px;
 }
-
-#contact {
-
-}
 @media (max-width: 768px) {
   .title-super {
     font-size: 10vw;
@@ -117,8 +129,4 @@ hr.star-dark:after {
   .navbar-nav li {
     width: 100%;
   }
-
-  /*.navbar-nav li + li:before{
-    content: '<hr>';
-  }*/
 }
