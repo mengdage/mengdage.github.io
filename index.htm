@@ -25,6 +25,7 @@
       </div>
     </div>
   </header>
+
   <nav class="navbar navbar-default" data-spy="affix" data-offset-top="116">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,6 +49,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
   <!-- <hr class="thick-hr"> -->
   <main class="container">
     <section id="about" class="row">
@@ -65,65 +67,99 @@
         <img class="portrait-img img-responsive img-rounded" src="images/menglin.jpg" alt="Meng Lin">
       </div>
     </section>
+
     <section id="featured-work">
-      <h2 class="text-muted text-center">Featured Work</h2>
-      <hr class="star-dark">
+      <div class="col-md-12">
+        <h2 class="text-muted text-center">Featured Work</h2>
+        <hr class="star-dark">
+      </div>
+
       <div class="row text-center">
         <div class="col-md-6">
-          <img class="img-thumbnail" src="images/Frogger.png" alt="Frogger">
+          <picture>
+            <source media="(max-width: 449px)" srcset="images/Frogger-300w.png">
+            <source media="(min-width: 450)" srcset="images/Frogger-500w.png">
+            <img class="img-thumbnail" src="images/Frogger-500w.png" alt="Frogger">
+          </picture>
           <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/frontend-nanodegree-arcade-game">A Clone of the Frogger Game</a></h3>
           <p class="text-small">A clone of the popular frogger game, which features a character selection menu, a persistent scoreboard, and mobile support. Built with HTML5 canvas. Use browser’s local storage and Web Audio API to increase user experience.</p>
         </div>
         <div class="col-md-6">
-          <img class="img-thumbnail" src="images/GoodTaber.png" alt="Good Taber">
+          <picture>
+            <source media="(max-width: 449px)" srcset="images/GoodTaber-300w.png">
+            <source media="(min-width: 450)" srcset="images/GoodTaber-500w.png">
+            <img class="img-thumbnail" src="images/GoodTaber-500w.png" alt="Good Taber">
+          </picture>
           <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/goodtaber">Chrome Tabs Manager</a></h3>
           <p class="text-small">A Chrome extension that helps users manage Chrome tabs, including searching, closing, rearranging tabs. Wrote the popup in AngularJS. Added a new JavaScript-accessible Chromium API to return least frequently used tabs. </p>
         </div>
         <div class="col-md-6">
-          <img class="img-thumbnail" src="https://via.placeholder.com/500x300" alt="">
+          <picture>
+            <img class="img-thumbnail" src="https://via.placeholder.com/500x300" alt="">
+          </picture>
           <h3>Appify</h3>
           <p><a href="#">Link to project</a></p>
         </div>
         <div class="col-md-6">
-          <img class="img-thumbnail" src="images/Simulator.png" alt="simulator">
+          <picture>
+            <img class="img-thumbnail" src="images/Simulator.png" alt="simulator">
+          </picture>
           <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/simulator">Simulation of a Computer System</a></h3>
-
           <p class="text-small">A simulation of a computer system using Java, which consisted of a x86-like ISA, a CPU, a cache, a memory and registers. It supported memory and cache operations, I/O, vector operations and pipelining.</p>
         </div>
       </div>
     </section>
-      <section id="contact">
+
+    <section id="contact">
+      <div class="col-md-12">
         <h2 class="text-center text-muted">Contact Me</h2>
         <hr class="star-dark">
-        <form class="form-horizontal" action="index.html" method="post">
-          <div class="form-group">
-            <label for="name" class="col-sm-2 control-label">Name:</label>
-            <div class="col-sm-10">
-              <input id="name" class="form-control" type="text" name="user_name" placeholder="Your name">
-            </div>
+      </div>
+
+      <form class="form-horizontal" action="index.html" method="post">
+        <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name:</label>
+          <div class="col-sm-10">
+            <input id="name" class="form-control" type="text" name="user_name" placeholder="Your name">
           </div>
-          <div class="form-group">
-            <label for="email" class="col-sm-2 control-label">Email:</label>
-            <div class="col-sm-10">
-              <input id="email" class="form-control" type="email" name="user_email" placeholder="Your email">
-            </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email:</label>
+          <div class="col-sm-10">
+            <input id="email" class="form-control" type="email" name="user_email" placeholder="Your email">
           </div>
-          <div class="form-group">
-            <label for="message" class="col-sm-2 control-label">Message:</label>
-            <div class="col-sm-10">
-              <textarea id="message" class="form-control" name="user_message" rows="5" placeholder="Anything you want to say"></textarea>
-            </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="col-sm-2 control-label">Message:</label>
+          <div class="col-sm-10">
+            <textarea id="message" class="form-control" name="user_message" rows="5" placeholder="Anything you want to say"></textarea>
           </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="button" class="btn btn-default btn-lg">Submit</button>
-            </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-default btn-lg">Submit</button>
           </div>
-        </form>
-      </section>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="social-info col-sm-offset-6 col-sm-6">
+          <ul class="social-list">
+            <li class="social-item"><a target="_blank" href="https://www.linkedin.com/in/meng-lin-5a6b2b92/" atl="my linked account"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></a></i></li>
+            <li class="social-item"><a target="_blank" href="https://github.com/mengdage" atl="my github account"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></a></i></li>
+            <li class="social-item"><a target="_blank" href="https://www.facebook.com/meng.lin.3154" alt="my facebook account"><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></a></i></li>
+            <li class="social-item"><a target="_blank" href="#"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></a></i></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+    </div>
 
   </footer>
 
