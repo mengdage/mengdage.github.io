@@ -65,7 +65,7 @@ body {
 
 .navbar-default {
   background-color: #fff;
-  border: 0px;
+  border: 0;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
