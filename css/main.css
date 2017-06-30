@@ -20,7 +20,7 @@ body {
 }
 
 .text-muted {
-  color: #BCBBBB;
+  color: #bcbbbb;
 }
 
 .text-small {
@@ -34,7 +34,7 @@ body {
 .thick-hr {
   border: none;
   height: 2px;
-  background-color: #BCBBBB;
+  background-color: #bcbbbb;
   width: 88%;
 }
 
@@ -64,12 +64,12 @@ body {
 }
 
 .navbar-default {
-  background-color: #FFF;
+  background-color: #fff;
   border: 0px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: #BCBBBB;
+  background-color: #bcbbbb;
 }
 
 .navbar-nav {
@@ -108,7 +108,7 @@ body {
   font-family: FontAwesome;
   content: "\f121";
   display: inline-block;
-  background-color: #FFF;
+  background-color: #fff;
   color: #c4c4c4;
   position: relative;
   top: -0.8em;
