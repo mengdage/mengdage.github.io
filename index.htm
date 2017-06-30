@@ -50,65 +50,87 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <!-- <hr class="thick-hr"> -->
   <main class="container">
     <section id="about" class="row">
+      <div class="col-md-12">
+        <h2 class="text-muted text-center">About Me</h2>
+        <hr class="star-dark">
+      </div>
+
       <div class="infoMe col-md-8">
         <p class="text-small">
-          Hi! I'm Meng Lin. I'm a Computer Science Master with 6 years’ programming experience in C/C++ and Java, and 1 year’s experience in JavaScript. I'm highly skilled in Web Application Development, Machine Learning, and Data Analysis.
+          Hi! I'm Meng Lin. I'm a Computer Science Master with 6 years’ programming experience in C/C++ and Java,
+          and 1 year’s experience in JavaScript. I'm highly skilled in Web Application Development, Machine Learning, and Data Analysis.
         </p>
-        <hr class="star-dark">
+        <hr class="star-dark inline">
         <p>
-          I started as a web developer at the beginning of 2017 by taking a specialization called <a href="https://www.coursera.org/specializations/ruby-on-rails" title="Ruby on Rails Web Development Specialization">Ruby on Rails Web Development Specialization</a> from Coursera. Then I joined the <a href="https://www.freecodecamp.com" title="free codecamp">FreeCodeCamp</a> to learn Front-end development skills. Now I'm taking a <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" title="Front-End Web Developer Nanodegree">Front-End Web Developer Nanodegree program</a> offered by Udacity.
+          I started as a web developer at the beginning of 2017 by taking a specialization called
+          <a href="https://www.coursera.org/specializations/ruby-on-rails" title="Ruby on Rails Web Development Specialization">
+            Ruby on Rails Web Development Specialization
+          </a> from Coursera. Then I joined the
+          <a href="https://www.freecodecamp.com" title="free codecamp">FreeCodeCamp</a>
+          to learn Front-end development skills. Now I'm taking a
+          <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" title="Front-End Web Developer Nanodegree">
+            Front-End Web Developer Nanodegree program
+          </a>
+          offered by Udacity.
         </p>
-
       </div>
+
       <div class="col-md-4">
         <img class="portrait-img img-responsive img-rounded" src="images/menglin.jpg" alt="Meng Lin">
       </div>
-    </section>
+    </section> <!-- /#about -->
 
-    <section id="featured-work" class="row">
+    <section id="featured-work" class="row text-center">
       <div class="col-md-12">
-        <h2 class="text-muted text-center">Featured Work</h2>
+        <h2 class="text-muted">Featured Work</h2>
         <hr class="star-dark">
       </div>
 
-      <div class="row text-center">
-        <div class="col-md-6">
-          <picture>
-            <source media="(max-width: 449px)" srcset="images/Frogger-300w.png">
-            <source media="(min-width: 450)" srcset="images/Frogger-500w.png">
-            <img class="img-thumbnail" src="images/Frogger-500w.png" alt="Frogger">
-          </picture>
-          <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/frontend-nanodegree-arcade-game">A Clone of the Frogger Game</a></h3>
-          <p class="text-small">A clone of the popular frogger game, which features a character selection menu, a persistent scoreboard, and mobile support. Built with HTML5 canvas. Use browser’s local storage and Web Audio API to increase user experience.</p>
-        </div>
-        <div class="col-md-6">
-          <picture>
-            <source media="(max-width: 449px)" srcset="images/GoodTaber-300w.png">
-            <source media="(min-width: 450)" srcset="images/GoodTaber-500w.png">
-            <img class="img-thumbnail" src="images/GoodTaber-500w.png" alt="Good Taber">
-          </picture>
-          <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/goodtaber">Chrome Tabs Manager</a></h3>
-          <p class="text-small">A Chrome extension that helps users manage Chrome tabs, including searching, closing, rearranging tabs. Wrote the popup in AngularJS. Added a new JavaScript-accessible Chromium API to return least frequently used tabs. </p>
-        </div>
-        <div class="col-md-6">
-          <picture>
-            <img class="img-thumbnail" src="https://via.placeholder.com/500x300" alt="">
-          </picture>
-          <h3>Appify</h3>
-          <p><a href="#">Link to project</a></p>
-        </div>
-        <div class="col-md-6">
-          <picture>
-            <img class="img-thumbnail" src="images/Simulator.png" alt="simulator">
-          </picture>
-          <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/simulator">Simulation of a Computer System</a></h3>
-          <p class="text-small">A simulation of a computer system using Java, which consisted of a x86-like ISA, a CPU, a cache, a memory and registers. It supported memory and cache operations, I/O, vector operations and pipelining.</p>
-        </div>
+      <div class="col-md-6">
+        <picture>
+          <source media="(max-width: 449px)" srcset="images/Frogger-300w.png">
+          <source media="(min-width: 450px)" srcset="images/Frogger-500w.png">
+          <img class="img-thumbnail" src="images/Frogger-500w.png" alt="Frogger">
+        </picture>
+        <h3>
+          <a class="git-link" target="_blank" href="https://github.com/mengdage/frontend-nanodegree-arcade-game">
+            A Clone of the Frogger Game
+          </a>
+        </h3>
+        <p class="text-small">
+          A clone of the popular frogger game, which features a character selection menu, a persistent scoreboard, and mobile support.
+          Built with HTML5 canvas. Use browser’s local storage and Web Audio API to increase user experience.
+        </p>
       </div>
-    </section>
+
+      <div class="col-md-6">
+        <picture>
+          <source media="(max-width: 449px)" srcset="images/GoodTaber-300w.png">
+          <source media="(min-width: 450px)" srcset="images/GoodTaber-500w.png">
+          <img class="img-thumbnail" src="images/GoodTaber-500w.png" alt="Good Taber">
+        </picture>
+        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/goodtaber">Chrome Tabs Manager</a></h3>
+        <p class="text-small">A Chrome extension that helps users manage Chrome tabs, including searching, closing, rearranging tabs. Wrote the popup in AngularJS. Added a new JavaScript-accessible Chromium API to return least frequently used tabs. </p>
+      </div>
+
+      <div class="col-md-6">
+        <picture>
+          <img class="img-thumbnail" src="https://via.placeholder.com/500x300" alt="">
+        </picture>
+        <h3>Appify</h3>
+        <p><a href="#">Link to project</a></p>
+      </div>
+
+      <div class="col-md-6">
+        <picture>
+          <img class="img-thumbnail" src="images/Simulator.png" alt="simulator">
+        </picture>
+        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/simulator">Simulation of a Computer System</a></h3>
+        <p class="text-small">A simulation of a computer system using Java, which consisted of a x86-like ISA, a CPU, a cache, a memory and registers. It supported memory and cache operations, I/O, vector operations and pipelining.</p>
+      </div>
+    </section> <!-- /#featured-work -->
 
     <section id="contact" class="row">
       <div class="col-md-12">
@@ -116,32 +138,34 @@
         <hr class="star-dark">
       </div>
 
-      <form class="form-horizontal" action="index.html" method="post">
-        <div class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name:</label>
-          <div class="col-sm-10">
-            <input id="name" class="form-control" type="text" name="user_name" placeholder="Your name">
+      <div class="col-md-12">
+        <form class="form-horizontal" action="index.html" method="post">
+          <div class="form-group row">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-10">
+              <input id="name" class="form-control" type="text" name="user_name" placeholder="Your name">
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="email" class="col-sm-2 control-label">Email:</label>
-          <div class="col-sm-10">
-            <input id="email" class="form-control" type="email" name="user_email" placeholder="Your email">
+          <div class="form-group row">
+            <label for="email" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-10">
+              <input id="email" class="form-control" type="email" name="user_email" placeholder="Your email">
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="message" class="col-sm-2 control-label">Message:</label>
-          <div class="col-sm-10">
-            <textarea id="message" class="form-control" name="user_message" rows="5" placeholder="Anything you want to say"></textarea>
+          <div class="form-group row">
+            <label for="message" class="col-sm-2 control-label">Message:</label>
+            <div class="col-sm-10">
+              <textarea id="message" class="form-control" name="user_message" rows="5" placeholder="Anything you want to say"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-default btn-lg">Submit</button>
+          <div class="form-group row">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="button" class="btn btn-default btn-lg">Submit</button>
+            </div>
           </div>
-        </div>
-      </form>
-    </section>
+        </form>
+      </div>
+    </section> <!-- /#contact -->
   </main>
 
   <footer>
@@ -149,18 +173,14 @@
       <div class="row">
         <div class="social-info col-sm-offset-6 col-sm-6">
           <ul class="social-list">
-            <li class="social-item"><a target="_blank" href="https://www.linkedin.com/in/meng-lin-5a6b2b92/" atl="my linked account"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i></a></li>
-            <li class="social-item"><a target="_blank" href="https://github.com/mengdage" atl="my github account"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i></a></li>
-            <li class="social-item"><a target="_blank" href="https://www.facebook.com/meng.lin.3154" alt="my facebook account"><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a target="_blank" href="https://www.linkedin.com/in/meng-lin-5a6b2b92/" title="my linked account"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a target="_blank" href="https://github.com/mengdage" title="my github account"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i></a></li>
+            <li class="social-item"><a target="_blank" href="https://www.facebook.com/meng.lin.3154" title="my facebook account"><i class="fa fa-facebook fa-fw fa-lg" aria-hidden="true"></i></a></li>
             <li class="social-item"><a target="_blank" href="#"><i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-
       </div>
-
-
     </div>
-
   </footer>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
