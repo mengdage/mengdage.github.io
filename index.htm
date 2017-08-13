@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Meng Lin's Portfolio</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -88,73 +88,92 @@
       <div class="col-md-12">
         <h2 class="text-muted">Featured Work</h2>
         <hr class="star-dark">
-      </div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#own-projects" aria-controls="own-projects" role="tab" data-toggle="tab">Projects</a>
+          </li>
+          <li role="presentation">
+            <a href="#exercise-projects" aria-controls="exercise-projects" role="tab" data-toggle="tab">Exercises</a>
+          </li>
+        </ul>
 
-      <div class="col-md-6">
-        <a target="_blank" href="https://mengdage.github.io/my-reads/">
-          <picture>
-            <source media="(max-width: 449px)" srcset="images/myreads-300w.jpg">
-            <source media="(min-width: 450px)" srcset="images/myreads-500w.jpg">
-            <img class="img-thumbnail" src="images/myreads-500w.png" alt="My Reads">
-          </picture>
-        </a>
-        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/my-reads">MyReads</a></h3>
-        <p class="text-small">
-          MyReads is a single-page web bookshelf application built with React.js. It allows users to select and categorize books. Users can also search for books and add books to their bookshelfs by interacting with the RESTful API server by using fetch API.
-        </p>
-      </div>
+        <div class="tab-content">
+          <div class="tab-pane active row" role="tabpanel" id="own-projects">
+            <p class="text-left small col-sm-12" ><em>*Pojects done by myself.</em></p>
+            <div class="col-md-6">
+              <a target="_blank" href="https://mengdage.github.io/my-reads/">
+                <picture>
+                  <source media="(max-width: 449px)" srcset="images/myreads-300w.jpg">
+                  <source media="(min-width: 450px)" srcset="images/myreads-500w.jpg">
+                  <img class="img-thumbnail" src="images/myreads-500w.png" alt="My Reads">
+                </picture>
+              </a>
+              <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/my-reads">MyReads</a></h3>
+              <p class="text-small">
+                MyReads is a single-page web bookshelf application built with React.js. It allows users to select and categorize books. Users can also search for books and add books to their bookshelfs by interacting with the RESTful API server by using fetch API.
+              </p>
+            </div>
 
-      <div class="col-md-6">
-        <a target="_blank" href="https://mengdage.github.io/neighbourhood-map/">
-          <picture>
-            <source media="(max-width: 449px)" srcset="images/NeighborhoodMap-300w.jpg">
-            <source media="(min-width: 450px)" srcset="images/NeighborhoodMap-500w.jpg">
-            <img class="img-thumbnail" src="images/NeighborhoodMap-500w.png" alt="Good Taber">
-          </picture>
-        </a>
-        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/neighbourhood-map">Neighborhood Map</a></h3>
-        <p class="text-small">A single-page web application built with Knockout.js that features a map of a neighborhood by utilizing Google Maps API. Users can search, add, filter map markers. Third-party data from Flicker and Wikipedia are provided when markers are clicked.</p>
-      </div>
+            <div class="col-md-6">
+              <a target="_blank" href="https://mengdage.github.io/neighbourhood-map/">
+                <picture>
+                  <source media="(max-width: 449px)" srcset="images/NeighborhoodMap-300w.jpg">
+                  <source media="(min-width: 450px)" srcset="images/NeighborhoodMap-500w.jpg">
+                  <img class="img-thumbnail" src="images/NeighborhoodMap-500w.png" alt="Good Taber">
+                </picture>
+              </a>
+              <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/neighbourhood-map">Neighborhood Map</a></h3>
+              <p class="text-small">A single-page web application built with Knockout.js that features a map of a neighborhood by utilizing Google Maps API. Users can search, add, filter map markers. Third-party data from Flicker and Wikipedia are provided when markers are clicked.</p>
+            </div>
 
-      <div class="col-md-6">
-        <a target="_blank" href="https://mengdage.github.io/frontend-nanodegree-arcade-game/">
-        <picture>
-          <source media="(max-width: 449px)" srcset="images/Frogger-300w.jpg">
-          <source media="(min-width: 450px)" srcset="images/Frogger-500w.jpg">
-          <img class="img-thumbnail" src="images/Frogger-500w.png" alt="Frogger">
-        </picture>
-        </a>
-        <h3>
-          <a class="git-link" target="_blank" href="https://github.com/mengdage/frontend-nanodegree-arcade-game">
-            A Clone of the Frogger Game
-          </a>
-        </h3>
-        <p class="text-small">
-          A clone of the popular frogger game, which features a character selection menu, a persistent scoreboard, and mobile support.
-          Worked heavily with the HTML canvas element. Use browser’s local storage and Web Audio API to increase user experience.
-        </p>
-      </div>
+            <div class="col-md-6">
+              <a target="_blank" href="https://mengdage.github.io/frontend-nanodegree-arcade-game/">
+              <picture>
+                <source media="(max-width: 449px)" srcset="images/Frogger-300w.jpg">
+                <source media="(min-width: 450px)" srcset="images/Frogger-500w.jpg">
+                <img class="img-thumbnail" src="images/Frogger-500w.png" alt="Frogger">
+              </picture>
+              </a>
+              <h3>
+                <a class="git-link" target="_blank" href="https://github.com/mengdage/frontend-nanodegree-arcade-game">
+                  A Clone of the Frogger Game
+                </a>
+              </h3>
+              <p class="text-small">
+                A clone of the popular frogger game, which features a character selection menu, a persistent scoreboard, and mobile support.
+                Worked heavily with the HTML canvas element. Use browser’s local storage and Web Audio API to increase user experience.
+              </p>
+            </div>
 
-      <div class="col-md-6">
-        <a target="_blank" href="https://github.com/mengdage/goodtaber">
-          <picture>
-            <source media="(max-width: 449px)" srcset="images/GoodTaber-300w.jpg">
-            <source media="(min-width: 450px)" srcset="images/GoodTaber-500w.jpg">
-            <img class="img-thumbnail" src="images/GoodTaber-500w.png" alt="Good Taber">
-          </picture>
-        </a>
-        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/goodtaber">Chrome Tabs Manager</a></h3>
-        <p class="text-small">A Chrome extension that helps users manage Chrome tabs, including searching, closing, rearranging tabs. Wrote the popup in AngularJS. Added a new JavaScript-accessible Chromium API to return least frequently used tabs. </p>
-      </div>
+            <div class="col-md-6">
+              <a target="_blank" href="https://github.com/mengdage/goodtaber">
+                <picture>
+                  <source media="(max-width: 449px)" srcset="images/GoodTaber-300w.jpg">
+                  <source media="(min-width: 450px)" srcset="images/GoodTaber-500w.jpg">
+                  <img class="img-thumbnail" src="images/GoodTaber-500w.png" alt="Good Taber">
+                </picture>
+              </a>
+              <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/goodtaber">Chrome Tabs Manager</a></h3>
+              <p class="text-small">A Chrome extension that helps users manage Chrome tabs, including searching, closing, rearranging tabs. Wrote the popup in AngularJS. Added a new JavaScript-accessible Chromium API to return least frequently used tabs. </p>
+            </div>
 
-      <div class="col-md-6">
-        <a target="_blank" href="https://github.com/mengdage/simulator">
-          <picture>
-            <img class="img-thumbnail" src="images/Simulator.jpg" alt="simulator">
-          </picture>
-        </a>
-        <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/simulator">Simulation of a Computer System</a></h3>
-        <p class="text-small">A simulation of a computer system using Java, which consisted of a x86-like ISA, a CPU, a cache, a memory and registers. It supported memory and cache operations, I/O, vector operations and pipelining.</p>
+            <div class="col-md-6">
+              <a target="_blank" href="https://github.com/mengdage/simulator">
+                <picture>
+                  <img class="img-thumbnail" src="images/Simulator.jpg" alt="simulator">
+                </picture>
+              </a>
+              <h3><a class="git-link" target="_blank" href="https://github.com/mengdage/simulator">Simulation of a Computer System</a></h3>
+              <p class="text-small">A simulation of a computer system using Java, which consisted of a x86-like ISA, a CPU, a cache, a memory and registers. It supported memory and cache operations, I/O, vector operations and pipelining.</p>
+            </div>
+          </div>
+
+          <div class="tab-pane row exercise-projects" role="tabpanel" id="exercise-projects">
+            <p class="text-left small col-sm-12"><em>*Projects done as exercises or following tutorials.</em></p>
+            Exercises
+          </div>
+        </div>
+
       </div>
     </section> <!-- /#featured-work -->
 
